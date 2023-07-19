@@ -8,7 +8,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open basic-grid.html",
+            "name": "Open inicio.html",
             "file": "c:\\Users\\jonat\\Personales\\Amor\\invitacionBoda\\miBodaSonada\\inicio.html"
         }
     ]
