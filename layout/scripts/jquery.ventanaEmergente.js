@@ -62,3 +62,15 @@ btnAbrirFechaCita.addEventListener("click",()=>{
 btnCerrarFechaCita.addEventListener("click",()=>{
    cita.close();
 })
+
+const btnAbrirMusica = document.querySelector("#btn-abrir-musica");
+const btnCerrarMusica = document.querySelector("#btn-cerrar-musica");
+const musica = document.querySelector("#musica");
+
+btnAbrirMusica.addEventListener("click",()=>{
+   musica.showModal();
+})
+
+btnCerrarMusica.addEventListener("click",()=>{
+   musica.close();
+})
