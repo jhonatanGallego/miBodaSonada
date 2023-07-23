@@ -60,20 +60,20 @@
       			<ul class="nospace group btmspace-80 elements elements-four">
         			<li class="one_quarter">
           				<article>
-          					<a href="#testimonials"><i class="fas fa-hand-rock"></i></a>
+          					<a href="#testimonials"><i class="fas fa-dove"></i></a>
             				<h6 class="heading">¡Deseamos verte!</h6>
           				</article>
         			</li>
         			<li class="one_quarter">
           				<article>
-          					<a href="#detalles"><i class="fas fa-dove"></i></a>
+          					<a href="#detalles"><i class="fas fa-info"></i></a>
             				<h6 class="heading">Detalles de la boda</h6>
           				</article>
         			</li>
         			<li class="one_quarter">
           				<article>
-          					<a id="btn-abrir-cita"><i class="fas fa-history"></i></a>
-            				<h6 class="heading">Fecha</h6>
+          					<a id="btn-abrir-cita"><i class="fas fa-stopwatch"></i></a>
+            				<h6 class="heading">Fecha & Hora</h6>
           				</article>
         			</li>
         			<li class="one_quarter">
@@ -138,8 +138,8 @@
 				<li class="one_third">
         			<article>
         				<a id="btn-abrir-fecha"><i class="fas fa-calendar-alt"></i></a>						
-          				<h6 class="heading">Fecha</h6>
-						<p>19 de Noviembre 2023</p>
+          				<h6 class="heading">Fecha & Hora</h6>
+						<p>19 de Noviembre 2023 a las 4 pm</p>
         			</article>
       			</li>
 				<li class="one_third">
@@ -346,28 +346,29 @@
 	</div>
     
 	<!-- Inicio de las ventanas emergentes-->
-	<dialog id="lugar" style="background-image:url('images/demo/backgrounds/laMartina.jpg');">
+	<dialog id="lugar" class="bgded sombra" style="background-image:url('images/demo/backgrounds/laMartina.jpg');">
 		<div>
 			<section id="ctdetails">
-			  <div class="sectiontitle">
-				<h5 class="heading font-xs2">Finca la Martina</h6>
-				<br>
-      			<p class="heading font-xs2">Sueño hecho realidad</p>
-			  </div>
-			</section>
-			<button id="btn-cerrar-lugar" class="bg-img-botton"><i class="fas fa-times"></i></button>
+				<div class="sectiontitle">
+				  <h5 class="heading font-xs2">Finca la Martina</h6>
+				  <br>
+					<p class="heading font-xs2">Sueño hecho realidad</p>
+				</div>
+			  </section>
+			  <button id="btn-cerrar-lugar" class="bg-img-botton"><i class="fas fa-times"></i></button>
 		</div>
 	</dialog>
 
-	<dialog id="regalo" style="background-image:url('images/demo/backgrounds/lluvia_sobres.png');">
+	<dialog id="regalo" class="bgded sombra" style="background-image:url('images/demo/backgrounds/lluvia_sobres.png');">
 		<div>
 			<section id="ctdetails">
 			  <div class="sectiontitle">
 					<h5 class="heading font-xs2">
+						<br><br>
 					</h5>
 			  </div>
 			</section>
-				<button id="btn-cerrar-regalo" class="bg-img-botton-regalo"><i class="fas fa-times"></i></button>
+				<button id="btn-cerrar-regalo" class="bg-img-botton"><i class="fas fa-times"></i></button>
 		</div>
 	</dialog>
 
@@ -394,7 +395,7 @@
 		<button id="btn-cerrar-modal">Cerrar</button>
 	</dialog>
 
-	<dialog id="fecha" style="background-image:url('images/demo/backgrounds/fechaBoda.jpg');">
+	<dialog id="fecha"  class="bgded sombra" style="background-image:url('images/demo/backgrounds/fechaBoda.jpg');">
 		<div>
 			<section id="ctdetails">
 			  <div class="sectiontitle">
@@ -405,7 +406,7 @@
 		</div>
 	</dialog>
 
-	<dialog id="cita" style="background-image:url('images/demo/besos.png');">
+	<dialog id="cita" class="bgded sombra" style="background-image:url('images/demo/besos.png');">
 		<div>
 			<section id="ctdetails">
 			  	<div class="sectiontitle" >
@@ -415,7 +416,7 @@
 					</p>
 				</div>
 			</section>
-			<button id="btn-cerrar-cita" class="bg-img-bottonx2"><i class="fas fa-times"></i></button>
+			<button id="btn-cerrar-cita" class="bg-img-botton"><i class="fas fa-times"></i></button>
 		</div>
 	</dialog>
 
@@ -451,14 +452,14 @@
 						Agrega la musica que desea escuchar dando clic en Playlist Spotify.
 						<br><br>
 						<center>
-							<button class="bg-img-botton-music">
+							<button>
 								<a href="https://open.spotify.com/playlist/3pMzZiq0Fo39alnszz05W5?si=38dc626958714ed2&pt=ae5431b9616a5c841a4be3022fbdbad8" target="_blank">Playlist Spotify<i class="fas fa-headphones"></i></a>
 							</button>
 						</center>
 					</p>
 			  	</div>
 			</section>
-			<button id="btn-cerrar-musica" class="bg-img-bottonx2"><i class="fas fa-times"></i></button>
+			<button id="btn-cerrar-musica" class="bg-img-botton"><i class="fas fa-times"></i></button>
 		</div>
 	</dialog>
 

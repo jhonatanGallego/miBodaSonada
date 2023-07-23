@@ -62,6 +62,8 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
 .imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f067";/* fa-plus */ font-size:28px;}
 .imgover:hover::before, .imgover:hover::after{opacity:1;}
 
+.sombra {opacity: 0.9;}
+
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
@@ -141,37 +143,75 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .inspace-20{padding:20px;}
 .inspace-30{padding:30px;}
 
+@media screen and (max-width:380px){
+  #micontador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0;
+ }
+ #micontador .num{
+    display: flex;
+    flex-direction:column;
+    border: 1px solid rgb(196, 84, 84);
+    margin: 0 8px;
+ }
+ #micontador .num .dig{
+    overflow: hidden;
+    padding: 5px;
+ }
+ #micontador .num .dig span{
+    font-family: "Arial Black";
+    font-size: 4rem;
+    font-weight: 600px;
+    position: relative;
+ }
+ #micontador .label{
+    text-align: center;
+    border-top: 1px solid black;
+ }
+ 
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+ }
+   
+}
 
 #micontador{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0;
 }
 #micontador .num{
-   display: flex;
-   flex-direction:column;
-   border: 1px solid black;
-   margin: 0 8px;
+  display: flex;
+  flex-direction:column;
+  border: 1px solid black;
+  margin: 0 8px;
 }
 #micontador .num .dig{
-   overflow: hidden;
-   padding: 10px;
+  overflow: hidden;
+  padding: 8px;
 }
 #micontador .num .dig span{
-   font-family: "Arial Black";
-   font-size: 4rem;
-   font-weight: 600px;
-   position: relative;
+  font-family: "Arial Black";
+  font-size: 3rem;
+  font-weight: 600px;
+  position: relative;
 }
 #micontador .label{
-   text-align: center;
-   border-top: 1px solid black;
+  text-align: center;
+  border-top: 1px solid black;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -231,19 +271,6 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
     font-size: 1.3rem;
 }
 
-#regalo {
-    background: #fff;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
-    box-sizing: content-box;
-    flex-direction: column;
-    margin: auto;
-    width: 750px;
-    height: 400px;
-    padding: 2rem;
-    font-size: 1.3rem;
-}
-
 #vestir {
   background: #fff;
   background-position: center;
@@ -258,36 +285,8 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
   opacity: 0.8;
 }
 
-#lugar {
+#lugar{
   background: #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 1px;
-  box-sizing: content-box;
-  margin-top: auto;
-  border-image: auto;
-  width: 600px;
-  height: 308px;
-}
-
-#fecha {
-  background: #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 2px;
-  box-sizing: content-box;
-  margin-top: auto;
-  border-image: auto;
-  width: 579px;
-  height: 507px;
-  opacity: 0.9;
-}
-
-#cita {
-  background: #fff;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2px;
@@ -297,20 +296,56 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
   width: 500px;
   height: 300px;
   opacity: 0.9;
-  font-family: "Arial Black";
-  font-size: 4rem;
 }
 
-#musica {
+#regalo{
   background: #fff;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2px;
   box-sizing: content-box;
   margin-top: auto;
   border-image: auto;
-  width: 550px;
+  width: 500px;
+  height: 300px;
+  opacity: 0.9;
+}
+
+#fecha {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  box-sizing: content-box;
+  margin-top: auto;
+  border-image: auto;
+  width: 500px;
+  height: 300px;
+  opacity: 0.9;
+}
+
+#cita {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  box-sizing: content-box;
+  margin-top: auto;
+  border-image: auto;
+  width: 500px;
+  height: 300px;
+  opacity: 0.9;
+}
+
+#musica {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  box-sizing: content-box;
+  margin-top: auto;
+  border-image: auto;
+  width: 500px;
   height: 600px;
   opacity: 0.9;
 }
@@ -348,27 +383,5 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
   background-color: rgb(161, 155, 155);
   position: absolute;
   top: 20px;
-  left:550px;
-}
-
-.bg-img-botton-regalo {
-  background-color: rgb(161, 155, 155);
-  position: absolute;
-  top: 20px;
-  left:830px;
-}
-
-.bg-img-botton-music {
-  background-color: rgb(161, 155, 155);
-  width: 110px;
-  margin-left: 50%;
-
-}
-
-.bg-img-bottonx2 {
-  background-color: rgb(161, 155, 155);
-  position: absolute;
-  top: 20px;
-  left:500px;
-  margin-bottom: auto;
+  left:auto;
 }
